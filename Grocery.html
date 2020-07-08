@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<script>
+   //class Grocery
+    class Grocery {
+  
+      //constructor to recieve attributes
+      constructor(name, price) {
+       //assigning attributes to single variable
+        this.itemInformation = " Name: " + name + ", Price: " + price;
+      }
+    }
+   //instances of class Grocery
+    let item1 = new Grocery("Apple", 120);
+    let item2 = new Grocery("Orange", 130);
+    let item3 = new Grocery("Chicken", 210);
+    let item4 = new Grocery("Ice Cream Bars", 110);
+    let item5 = new Grocery("Eggs", 98);
+    let item6 = new Grocery("Mango", 110);
+  
+   //adding itemInformation of each instance to array itemList
+    itemList = [item1.itemInformation, item2.itemInformation, item3.itemInformation, item4.itemInformation, item5.itemInformation, item6.itemInformation]
+  
+   //printing array in HTML
+    document.body.innerHTML = itemList;
+</script>
+</body>
+
+</html>
